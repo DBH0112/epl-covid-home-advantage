@@ -1,20 +1,20 @@
 # EPL Home Advantage During COVID-19
 
-Did home advantage in the English Premier League actually disappear when matches were played without fans during the 2020-21 season?
-
-## Data
-
-Match-level data for 11 EPL seasons (2014-15 through 2025-26, excluding 2019-20), covering results, shots, fouls, cards, corners, and referees.
-
-Source: [football-data.co.uk](http://www.football-data.co.uk/), mirrored via [datahub.io](https://datahub.io/football/english-premier-league)
-
-## Method
-
-I combined the 11 seasons, calculated home win rate for each one, then compared the fan-less 2020-21 season against the 10 normal seasons using a two-proportion z-test. Since the league, teams, and season length stayed the same and crowd presence was really the only thing that changed, this works out close to a natural experiment.
+Home advantage in the English Premier League dropped when matches were played without fans during the 2020-21 COVID-19 season, suggesting crowds genuinely influence match outcomes, not just atmosphere.
 
 ## Results
 
-Home win rate during the COVID season came out to 37.9% (144 out of 380 games), compared to an average of 45.0% (1,709 out of 3,800 games) across the 10 normal seasons. It was lower than every single normal season in the comparison, including the weakest one at 40.8%. A two-proportion z-test put the p-value at 0.0040, meaning this gap is unlikely to be random chance.
+Home win rate during the COVID season came out to 37.9% (144 out of 380 games), compared to an average of 45.0% (1,709 out of 3,800 games) across 10 normal seasons. It was lower than every single normal season in the comparison, including the weakest one at 40.8%. A two-proportion z-test put the p-value at 0.0040, meaning this gap is unlikely to be random chance.
+
+## Method
+
+I combined 11 EPL seasons (2014-15 through 2025-26, excluding 2019-20), calculated home win rate for each one, then compared the fan-less 2020-21 season against the 10 normal seasons using a two-proportion z-test. Since the league, teams, and season length stayed the same and crowd presence was really the only thing that changed, this works out close to a natural experiment.
+
+## Data
+
+Match-level data for 11 EPL seasons, covering results, shots, fouls, cards, corners, and referees.
+
+Source: [football-data.co.uk](http://www.football-data.co.uk/), mirrored via [datahub.io](https://datahub.io/football/english-premier-league)
 
 ## Limitations
 
