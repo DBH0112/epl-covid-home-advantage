@@ -1,53 +1,24 @@
 # EPL Home Advantage During COVID-19
 
-Analysis of whether home advantage in the English Premier League
-disappeared when matches were played without fans during the 2020-21
-COVID-19 season.
-
-## Question
-
-Did home win rate actually drop during the fan-less 2020-21 season,
-compared to normal seasons?
+Did home advantage in the English Premier League actually disappear when matches were played without fans during the 2020-21 season?
 
 ## Data
 
-Match-level data for 11 EPL seasons (2014-15 through 2025-26, excluding
-2019-20), including results, shots, fouls, cards, corners, and referee.
+Match-level data for 11 EPL seasons (2014-15 through 2025-26, excluding 2019-20), covering results, shots, fouls, cards, corners, and referees.
 
-Source: [football-data.co.uk](http://www.football-data.co.uk/),
-mirrored via [datahub.io](https://datahub.io/football/english-premier-league)
+Source: [football-data.co.uk](http://www.football-data.co.uk/), mirrored via [datahub.io](https://datahub.io/football/english-premier-league)
 
 ## Method
 
-- Combined 11 seasons of match data and calculated home win rate per season
-- Compared the COVID season (2020-21, no fans) against the 10 normal seasons
-- Ran a two-proportion z-test to check whether the difference was
-  statistically significant
-
-Because the league, teams, and season structure stayed constant while
-crowd presence was the main thing that changed, this comparison works
-close to a natural experiment.
+I combined the 11 seasons, calculated home win rate for each one, then compared the fan-less 2020-21 season against the 10 normal seasons using a two-proportion z-test. Since the league, teams, and season length stayed the same and crowd presence was really the only thing that changed, this works out close to a natural experiment.
 
 ## Results
 
-- COVID season home win rate: **37.9%** (144/380 games)
-- Average across 10 normal seasons: **45.0%** (1,709/3,800 games)
-- The COVID season was lower than every individual normal season in the
-  comparison, including the weakest one (40.8%)
-- Two-proportion z-test: **p = 0.0040** — the gap is unlikely to be due
-  to random chance
+Home win rate during the COVID season came out to 37.9% (144 out of 380 games), compared to an average of 45.0% (1,709 out of 3,800 games) across the 10 normal seasons. It was lower than every single normal season in the comparison, including the weakest one at 40.8%. A two-proportion z-test put the p-value at 0.0040, meaning this gap is unlikely to be random chance.
 
 ## Limitations
 
-- The 2020-21 season also involved a compressed fixture schedule and
-  general pandemic disruption, which may have contributed to the drop
-  alongside the absence of fans
-- The 2019-20 season (which switched to no-fan matches mid-season) was
-  excluded to keep the comparison clean
-- The comparison window (2014-15 to 2024-25) was chosen for stylistic
-  consistency; results might differ with earlier eras included
-- Home advantage is influenced by many other factors (travel, rivalries,
-  weather) not controlled for individually in this analysis
+The 2020-21 season also had a compressed schedule and general pandemic disruption, so some of the drop could be fatigue-related rather than purely about fans. The 2019-20 season was excluded since it switched to no-fan matches partway through. The comparison window starting at 2014-15 was a somewhat arbitrary cutoff, chosen mainly to keep playing styles roughly consistent across seasons. Home advantage also depends on plenty of other things, like travel and rivalries, that this analysis doesn't account for individually.
 
 ## Tools
 
